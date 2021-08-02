@@ -29,7 +29,7 @@ module.exports = {
       //... other Algolia params
     },
     navbar: {
-      title: 'PolkaHubs',
+      title: 'PolkaHub',
       logo: {
         alt: 'PolkaHub  Logo',
         src: 'img/logo.svg',
