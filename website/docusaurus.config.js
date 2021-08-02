@@ -14,7 +14,7 @@ module.exports = {
   projectName: 'polkahub', // Usually your repo name.
   themeConfig: {
     algolia: {
-      apiKey: 'YOUR_API_KEY',
+      apiKey: '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',
       indexName: 'polkahub',
 
       // Optional: see doc section below
@@ -29,7 +29,7 @@ module.exports = {
       //... other Algolia params
     },
     navbar: {
-      title: 'PolkaHub',
+      title: 'PolkaHubs',
       logo: {
         alt: 'PolkaHub  Logo',
         src: 'img/logo.svg',
@@ -113,7 +113,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/radioactive-bg/polkahub/edit/main/website/blog/',
+            'https://github.com/radioactive-bg/polkahub/edit/main/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
