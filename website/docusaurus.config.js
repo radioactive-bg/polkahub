@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'PolkaHub',
   tagline: 'PolkaHub: The best search experience for docs',
-  url: 'https://polkahub.com',
+  url: 'https://polkahub.dev3.radioactive.bg/website/build/index.html',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
