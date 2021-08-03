@@ -46,9 +46,7 @@ function StreachFeature({Svg, title, description, subdescription}) {
         <h2>{title}</h2>
         <p>{description}</p>
         <p>{subdescription}</p>
-        <Link className="button button--primary button--lg" to="javascript:;">
-            PolkaHub Doc
-        </Link>
+        <Link className="button button--primary button--lg" to="javascript:;">PolkaHub Docs</Link>
       </div>
     </div>
   );
