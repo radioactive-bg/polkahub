@@ -1,0 +1,35 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.dflexContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem!important;
+}
+.dflexContent:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+.leftSvgWrapper {
+    width: 50%;
+    max-width: 100%;
+}
+.leftSvg {
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+@media (min-width: 997px){
+    .paddingResponsiveXl {
+        padding: 5rem!important;
+    }
+}
+@media (max-width: 996px) {
+    .leftSvgWrapper {
+        --ifm-col-width: 100%;
+        flex-basis: var(--ifm-col-width);
+        margin-left: 0;
+        max-width: var(--ifm-col-width);
+    }
+}

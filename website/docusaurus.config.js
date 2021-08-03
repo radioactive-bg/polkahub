@@ -14,7 +14,7 @@ module.exports = {
   projectName: 'polkahub', // Usually your repo name.
   themeConfig: {
     algolia: {
-      apiKey: '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',
+      apiKey: 'YOUR_API_KEY',
       indexName: 'polkahub',
 
       // Optional: see doc section below
