@@ -20,7 +20,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Focus on What Us',
+    title: 'Focus on Us',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
@@ -34,7 +34,6 @@ const FeatureList = [
       </>
     ),
   },
-  
 ];
 
 function StreachFeature({Svg, title, description, subdescription}) {
