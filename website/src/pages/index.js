@@ -39,51 +39,52 @@ const SocialList = [
   {
     linkTitle: 'Github',
     link: '/',
-    imgSrc: '../../static/img/logo-github.svg',
+    Svg: require('../../static/img/logo-github.svg').default,
 
   },
   {
     linkTitle: 'Twitter',
     link: '/',
-    imgSrc: '../../static/img/logo-twitter.svg',
+    Svg: require('../../static/img/logo-twitter.svg').default,
   },
   {
     linkTitle: 'Discord',
     link: '/',
-    imgSrc: '../../static/img/logo-discord.svg',
+    Svg: require('../../static/img/logo-discord.svg').default,
   },
   {
     linkTitle: 'instagram',
     link: '/',
-    imgSrc: '../../static/img/logo-instagram.svg',
+    Svg: require('../../static/img/logo-instagram.svg').default,
   },
   {
     linkTitle: 'Mail',
     link: '/',
-    imgSrc: '../../static/img/mail-outline.svg',
+    Svg: require('../../static/img/mail-outline.svg').default,
   },
 ];
 
 function Button({ linkTitle, link}) {
   return (
     <div className={styles.buttons}>
-        <a className="button button--primary button--outline button--lg" href={link} title={linkTitle}>{linkTitle}</a>
+        <a className="button button--primary button--outline button--lg" href={link}>{linkTitle}</a>
     </div>      
   );
 }
 
-function Social({ linkTitle, link, imgSrc}) {
+function Social({ linkTitle, link, Svg}) {
   return (
-    <a className="social_link" href={link} title={linkTitle}><img src={imgSrc} alt={linkTitle}/></a>    
+    <a className="social_link" href={link} title={linkTitle}><Svg alt={linkTitle} /></a>    
   );
 }
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const Logo = require('../../static/img/logo.svg').default;
   return (
     <section className={clsx('hero hero--dark', styles.heroBanner)}>
       <div className={clsx('container', styles.heroContainer)}>
-        <img src={'../../static/img/logo.svg'}  alt={siteConfig.title}/>
+        <Logo />
         <h1 className="hero__title text--white">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={clsx('hero--button-wrapper', styles.heroButtonWrapper)}>

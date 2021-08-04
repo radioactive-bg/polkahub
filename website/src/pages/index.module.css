@@ -55,7 +55,9 @@
   padding: 2rem 1rem;
 }
 .socials a{
-  font-display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .socials a+a {
   margin-left: 1rem;
@@ -63,20 +65,14 @@
 .socials a:hover img {
   opacity: .8;
 }
-.socials a img {
+.socials a svg {
+  width: 26px;
+  height: 26px
+}
+
+.socials a:nth-of-type(5) svg{
   width: 30px;
-}
-.socials a:nth-of-type(2) img{
-  width: 32px;
-}
-.socials a:nth-of-type(3) img{
-  width: 24px;
-}
-.socials a:nth-of-type(4) img{
-  width: 28px;
-}
-.socials a:nth-of-type(5) img{
-  width: 34px;
+  height: 30px
 }
 .socials p {
   margin-top: calc(var(--ifm-paragraph-margin-bottom)/2);
