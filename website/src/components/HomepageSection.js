@@ -1,11 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import styles from './HomepageSection.module.css';
 
 const FeatureList = [
   {
     title: 'Focus on What Comes',
+    link: '#',
+    linkTitle: 'Read More',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
@@ -21,6 +22,8 @@ const FeatureList = [
   },
   {
     title: 'Focus on Us',
+    link: '/docs/intro',
+    linkTitle: 'PlkaHub Docs',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
@@ -36,7 +39,7 @@ const FeatureList = [
   },
 ];
 
-function StreachFeature({Svg, title, description, subdescription}) {
+function StreachFeature({Svg, title, description, subdescription, link, linkTitle}) {
   return (
     <div className={clsx('col col--12', styles.dflexContent)}>
       <div className={styles.leftSvgWrapper}>
@@ -46,7 +49,7 @@ function StreachFeature({Svg, title, description, subdescription}) {
         <h2>{title}</h2>
         <p>{description}</p>
         <p>{subdescription}</p>
-        <Link className="button button--primary button--lg" to="javascript:;">PolkaHub Docs</Link>
+        <a className="button button--primary button--lg" href={link} title={linkTitle}>{linkTitle}</a>
       </div>
     </div>
   );

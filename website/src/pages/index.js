@@ -11,17 +11,39 @@ import SimpleCta from '../components/SimpleCta';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <section className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+    <section className={clsx('hero hero--dark', styles.heroBanner)}>
+      <div className={clsx('container', styles.heroContainer)}>
+        <img src={'../../static/img/logo.svg'} style={{minWidth: "inherit"}} alt={siteConfig.title}/>
+        <h1 className="hero__title text--white">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-              PolkaHub Documentations
-          </Link>
+        <div className={clsx('hero--button-wrapper', styles.heroButtonWrapper)}>
+          <div className={styles.buttons}>
+            <Link className="button button--primary button--outline button--lg" to="/docs/intro">DOCS</Link>
+          </div>
+          <div className={styles.buttons}>
+            <Link className="button button--primary button--outline button--lg" to="/newsletter">NEWSLETTER</Link>
+          </div>
+          <div className={styles.buttons}>
+            <Link className="button button--primary button--outline button--lg" to="/videos">VIDEOS</Link>
+          </div>
+          <div className={styles.buttons}>
+            <Link className="button button--primary button--outline button--lg" to="/staking">STAKING</Link>
+          </div>
+          <div className={styles.buttons}>
+            <Link className="button button--primary button--outline button--lg" to="/launchpad">LAUNCHPAD</Link>
+          </div>
+          <div className={styles.buttons}>
+            <Link className="button button--primary button--outline button--lg" to="/subscan">SUBSCAN</Link>
+          </div>
         </div>
+      </div>
+      <div className={clsx('socials', styles.socials)}>
+         <Link className="social_link" to="/"><img src={'../../static/img/logo-github.svg'} alt={"github"}/></Link>
+         <Link className="social_link" to="/"><img src={'../../static/img/logo-twitter.svg'} alt={"twitter"}/></Link>
+         <Link className="social_link" to="/"><img src={'../../static/img/logo-discord.svg'} alt={"discord"}/></Link>
+         <Link className="social_link" to="/"><img src={'../../static/img/logo-instagram.svg'} alt={"instagram"}/></Link>
+         <Link className="social_link" to="/"><img src={'../../static/img/mail-outline.svg'} alt={"mail"}/></Link>
+         <p class="text--grey">© Polkadot.com · Privacy Policy · Terms and Conditions</p>
       </div>
     </section>
   );
@@ -31,9 +53,9 @@ function HomepageHeader() {
 function HomepageFooter() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <section className={clsx('hero', styles.heroBanner)} style={{backgroundColor: "#f2f2f2"}}>
+    <section className={clsx('hero', )} style={{backgroundColor: "#f2f2f2", textAlign: "center"}}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        <h2 className="hero__title">{siteConfig.title}</h2>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link className="button button--primary button--lg" to="#">

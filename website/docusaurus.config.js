@@ -4,8 +4,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'PolkaHub',
-  tagline: 'PolkaHub: The best search experience for docs',
-  url: 'https://polkahub.dev3.radioactive.bg/website/build/index.html',
+  tagline: 'A scalable, interoperable & secure network protocol for the next web',
+  url: 'https://polkahub.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -22,12 +22,17 @@ module.exports = {
       //... other Algolia params
     },
     navbar: {
-      title: 'PolkaHub',
+      title: '',
       logo: {
         alt: 'PolkaHub  Logo',
         src: 'img/logo.svg',
       },
       items: [
+        {
+          href: '/landingpage',
+          label: 'Landing page',
+          position: 'left',
+        },
         {
           type: 'doc',
           docId: 'intro',
