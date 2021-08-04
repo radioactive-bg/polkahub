@@ -34,6 +34,35 @@ const ButonList = [
     link: '/subscan',
   },
 ];
+
+const SocialList = [
+  {
+    linkTitle: 'Github',
+    link: '/',
+    imgSrc: '../../static/img/logo-github.svg',
+  },
+  {
+    linkTitle: 'Twitter',
+    link: '/',
+    imgSrc: '../../static/img/logo-twitter.svg',
+  },
+  {
+    linkTitle: 'Discord',
+    link: '/',
+    imgSrc: '../../static/img/logo-discord.svg',
+  },
+  {
+    linkTitle: 'instagram',
+    link: '/',
+    imgSrc: '../../static/img/logo-instagram.svg',
+  },
+  {
+    linkTitle: 'Mail',
+    link: '/',
+    imgSrc: '../../static/img/mail-outline.svg',
+  },
+];
+
 function Button({ linkTitle, link}) {
   return (
     <div className={styles.buttons}>
@@ -41,6 +70,13 @@ function Button({ linkTitle, link}) {
     </div>      
   );
 }
+
+function Social({ linkTitle, link, imgSrc}) {
+  return (
+    <a className="social_link" href={link} title={linkTitle}><img src={imgSrc} alt={linkTitle}/></a>    
+  );
+}
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -54,12 +90,8 @@ function HomepageHeader() {
         </div>
       </div>
       <div className={clsx('socials', styles.socials)}>
-         <Link className="social_link" to="/"><img src={'../../static/img/logo-github.svg'} alt={"github"}/></Link>
-         <Link className="social_link" to="/"><img src={'../../static/img/logo-twitter.svg'} alt={"twitter"}/></Link>
-         <Link className="social_link" to="/"><img src={'../../static/img/logo-discord.svg'} alt={"discord"}/></Link>
-         <Link className="social_link" to="/"><img src={'../../static/img/logo-instagram.svg'} alt={"instagram"}/></Link>
-         <Link className="social_link" to="/"><img src={'../../static/img/mail-outline.svg'} alt={"mail"}/></Link>
-         <p className="text--grey">© Polkadot.com · Privacy Policy · Terms and Conditions</p>
+        {SocialList.map((props, idx) => ( <Social key={idx} {...props} />))}
+        <p className="text--grey">© Polkadot.com · Privacy Policy · Terms and Conditions</p>
       </div>
     </section>
   );
