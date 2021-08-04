@@ -4,8 +4,8 @@
   <ShortName>PolkaHub</ShortName>
   <Description>Search PolkaHub</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://polkahub.dev3.radioactive.bg/website/build/index.html/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://polkahub.dev3.radioactive.bg/website/build/index.html/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://polkahub.dev3.radioactive.bg/website/build/index.html/opensearch.xml" />
-  <moz:SearchForm>https://polkahub.dev3.radioactive.bg/website/build/index.html/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://polkahub.com/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://polkahub.com/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://polkahub.com/opensearch.xml" />
+  <moz:SearchForm>https://polkahub.com/</moz:SearchForm>
 </OpenSearchDescription>

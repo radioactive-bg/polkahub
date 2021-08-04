@@ -40,6 +40,7 @@ const SocialList = [
     linkTitle: 'Github',
     link: '/',
     imgSrc: '../../static/img/logo-github.svg',
+
   },
   {
     linkTitle: 'Twitter',
