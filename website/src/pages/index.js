@@ -8,33 +8,49 @@ import HomepageFeatures from '../components/HomepageFeatures';
 import HomepageSection from '../components/HomepageSection';
 import SimpleCta from '../components/SimpleCta';
 
+const ButonList = [
+  {
+    linkTitle: 'DOCS',
+    link: '/docs/intro',
+  },
+  {
+    linkTitle: 'NEWSLETTER',
+    link: '/newsletter',
+  },
+  {
+    linkTitle: 'VIDEOS',
+    link: '/videos',
+  },
+  {
+    linkTitle: 'STAKING',
+    link: '/staking',
+  },
+  {
+    linkTitle: 'LAUNCHPAD',
+    link: '/launchpad',
+  },
+  {
+    linkTitle: 'SUBSCAN',
+    link: '/subscan',
+  },
+];
+function Button({ linkTitle, link}) {
+  return (
+    <div className={styles.buttons}>
+        <a className="button button--primary button--outline button--lg" href={link} title={linkTitle}>{linkTitle}</a>
+    </div>      
+  );
+}
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <section className={clsx('hero hero--dark', styles.heroBanner)}>
       <div className={clsx('container', styles.heroContainer)}>
-        <img src={'../../static/img/logo.svg'} alt={siteConfig.title}/>
+        <img src={'../../static/img/logo.svg'}  alt={siteConfig.title}/>
         <h1 className="hero__title text--white">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={clsx('hero--button-wrapper', styles.heroButtonWrapper)}>
-          <div className={styles.buttons}>
-            <Link className="button button--primary button--outline button--lg" to="/docs/intro">DOCS</Link>
-          </div>
-          <div className={styles.buttons}>
-            <Link className="button button--primary button--outline button--lg" to="/newsletter">NEWSLETTER</Link>
-          </div>
-          <div className={styles.buttons}>
-            <Link className="button button--primary button--outline button--lg" to="/videos">VIDEOS</Link>
-          </div>
-          <div className={styles.buttons}>
-            <Link className="button button--primary button--outline button--lg" to="/staking">STAKING</Link>
-          </div>
-          <div className={styles.buttons}>
-            <Link className="button button--primary button--outline button--lg" to="/launchpad">LAUNCHPAD</Link>
-          </div>
-          <div className={styles.buttons}>
-            <Link className="button button--primary button--outline button--lg" to="/subscan">SUBSCAN</Link>
-          </div>
+          {ButonList.map((props, idx) => ( <Button key={idx} {...props} />))}
         </div>
       </div>
       <div className={clsx('socials', styles.socials)}>
@@ -58,9 +74,7 @@ function HomepageFooter() {
         <h2 className="hero__title">{siteConfig.title}</h2>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--primary button--lg" to="#">
-              PolkaHub
-          </Link>
+          <Link className="button button--primary button--lg" to="#">PolkaHub</Link>
         </div>
       </div>
     </section>
