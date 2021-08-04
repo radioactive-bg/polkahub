@@ -21,9 +21,7 @@ class SimpleCta extends React.Component {
             <h2 className="hero__title" style={{color: "var(--ifm-color-dark)"}}>PolkaHub Documents!</h2>
             <p style={{marginBottom: "1rem"}}>Docusaurus lets you focus on your docs, and we'll do the chores.</p>
             <div className={styles.buttons}>
-              <Link className="button button--primary button--lg" to="#">
-                  PolkaHub
-              </Link>
+              <Link className="button button--primary button--lg" to="#">PolkaHub</Link>
             </div>
         </div>
       </section>

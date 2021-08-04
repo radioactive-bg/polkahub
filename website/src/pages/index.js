@@ -13,7 +13,7 @@ function HomepageHeader() {
   return (
     <section className={clsx('hero hero--dark', styles.heroBanner)}>
       <div className={clsx('container', styles.heroContainer)}>
-        <img src={'../../static/img/logo.svg'} style={{minWidth: "inherit"}} alt={siteConfig.title}/>
+        <img src={'../../static/img/logo.svg'} alt={siteConfig.title}/>
         <h1 className="hero__title text--white">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={clsx('hero--button-wrapper', styles.heroButtonWrapper)}>
@@ -43,7 +43,7 @@ function HomepageHeader() {
          <Link className="social_link" to="/"><img src={'../../static/img/logo-discord.svg'} alt={"discord"}/></Link>
          <Link className="social_link" to="/"><img src={'../../static/img/logo-instagram.svg'} alt={"instagram"}/></Link>
          <Link className="social_link" to="/"><img src={'../../static/img/mail-outline.svg'} alt={"mail"}/></Link>
-         <p class="text--grey">© Polkadot.com · Privacy Policy · Terms and Conditions</p>
+         <p className="text--grey">© Polkadot.com · Privacy Policy · Terms and Conditions</p>
       </div>
     </section>
   );
