@@ -40,7 +40,6 @@ const SocialList = [
     linkTitle: 'Github',
     link: '/',
     Svg: require('../../static/img/logo-github.svg').default,
-
   },
   {
     linkTitle: 'Twitter',
