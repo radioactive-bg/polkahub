@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[535],{6353:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/polkahub/blog/welcome"},{"title":"Hello","permalink":"/polkahub/blog/hello-world"},{"title":"Hola","permalink":"/polkahub/blog/hola"}]}')}}]);
