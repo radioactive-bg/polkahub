@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[124],{7447:function(e){e.exports=JSON.parse('{"allTagsPath":"/polkahub/website/build/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/polkahub/website/build/blog/tags/hola"}')}}]);
