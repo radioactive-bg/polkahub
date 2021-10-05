@@ -5,12 +5,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'PolkaHub',
   tagline: 'A scalable, interoperable & secure network protocol for the next web',
-  url: 'https://polkahub.github.io',
-  baseUrl: '/',
+  url: 'https://radioactive-bg.github.io',
+  baseUrl: '/polkahub',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'polkahub', // Usually your GitHub org/user name.
+  organizationName: 'radioactive-bg', // Usually your GitHub org/user name.
   projectName: 'polkahub', // Usually your repo name.
   trailingSlash: false, // GitHub Pages adds a trailing slash to Docusaurus URLs by default. It is recommended to set a trailingSlash config (true or false, not undefined).
   themeConfig: {
