@@ -107,7 +107,7 @@ function HomepageFooter() {
         <h2 className="hero__title">{siteConfig.title}</h2>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--primary button--lg" to="#">PolkaHub</Link>
+          <Link className="button button--primary button--lg" to="#">PolkaDot</Link>
         </div>
       </div>
     </section>
