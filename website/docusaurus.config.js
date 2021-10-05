@@ -10,7 +10,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'radioactive-bg', // Usually your GitHub org/user name.
+  organizationName: 'polkahub', // Usually your GitHub org/user name.
   projectName: 'polkahub', // Usually your repo name.
   trailingSlash: false, // GitHub Pages adds a trailing slash to Docusaurus URLs by default. It is recommended to set a trailingSlash config (true or false, not undefined).
   themeConfig: {
