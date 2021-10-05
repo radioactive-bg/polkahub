@@ -6,7 +6,7 @@ module.exports = {
   title: 'PolkaHub',
   tagline: 'A scalable, interoperable & secure network protocol for the next web',
   url: 'https://radioactive-bg.github.io',
-  baseUrl: '/',
+  baseUrl: '/polkahub/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
